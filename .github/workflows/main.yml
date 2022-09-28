@@ -34,7 +34,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Building
         run: |
-          make iso
+          sudo make iso
 
       - name: Pushing
         run: |
