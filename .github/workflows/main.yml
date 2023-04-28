@@ -29,6 +29,8 @@ jobs:
       - name: Installing compiler
         run: |
           sudo apt-get update -y && sudo apt-get install nasm genisoimage build-essential -y
+          sudo apt-get update
+          sudo apt-get install --reinstall build-essential
           sudo chmod +x buildbin/*
           sudo cp buildbin/* /bin
 
